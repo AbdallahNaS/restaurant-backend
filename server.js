@@ -13,4 +13,5 @@ app.use(express.json())
 app.use("/api/auth", authRoutes)
 app.use("/api/orders", orderRoutes)
 
-app.listen(process.env.PORT)
+const PORT = process.env.PORT || 3001
+app.listen(PORT)
